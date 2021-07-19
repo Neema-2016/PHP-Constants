@@ -10,26 +10,25 @@ are names that when defined, cannot be altered. Shortly, we will dive more into 
 1. What a PHP Constant is.
 2. PHP Constant naming conventions
 3. How to define a PHP Constant.
-4. Difference between Constants and Variables.
-5. Dive into Magic constants.
+4. Differences between Constants and Variables.
 
 ### Prerequisites
 Before getting into it, you atleat have to know the following concepts and install the following tools in your machine.
 1. Possess a basic PHP language understanding.
-2. Installed xampp which you could get from [here](https://www.apachefriends.org/download.html) or wampp from [here](https://sourceforge.net/projects/wampserver/).
-3. Have installed a text editor you prefer. I will be using VS Code to run basic code from this article. You could install from [here](https://visualstudio.microsoft.com/downloads/)
+2. Installed xampp which you could get from [here](https://www.apachefriends.org/download.html) or wampp from [here](https://sourceforge.net/projects/wampserver/). These softwares run the PHP scripts.
+3. Have installed a text editor you prefer. I will be using VS Code to run basic code from this article which you could install from [here](https://visualstudio.microsoft.com/downloads/).
 
 Ready to learn? Let's begin!
 
 ### What a PHP Constant is
-From the above covered introduction, Constants can be compared to but not the same as variables. 
+From the above covered introduction, constants can be compared to but not the same as variables. 
 Unlike variables, once we initialize or define a constant, we cannot alter the 
 value attached to it when executing a script at any point in time. 
-Of course there exists an exception for this condition when we use (magic constants) instead. We will not cover magic constants in this article but you could find content on the same from [here](https://www.tutorialrepublic.com/php-tutorial/php-magic-constants.php) taht 
-Due to their immutable nature, PHP Constants come in handy when defining data like 
-configuration settings including website's base URL, database unername and passwords, to mention but a few. 
+Of course there exists an exception for this condition when we use (magic constants) instead. We will not cover magic constants in this article but you could 
+find content on the same from [here](https://www.tutorialrepublic.com/php-tutorial/php-magic-constants.php) that explain magic constants profoundly.
+Due to their immutable nature, PHP Constants come in handy when defining data like configuration settings including website's base URL, database unername and passwords, to mention but a few. 
 
-### PHP Constant naming conventions
+### PHP Constants naming conventions
 It is important to note that PHP Constants are case sentive before we proceed.
 Names of constants **must** begin with either a letter or an underscore(_). 
 Next when we see how to create a constant, we will also see that the constant names are **always** in uppercase.
