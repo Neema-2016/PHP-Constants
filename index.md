@@ -2,8 +2,8 @@
 title: Getting started with PHP Constants
 ---
 ### Introduction
-In layman's terms, when something is said to be constant, it means that it cannot be altered any way, even over time. 
-It is not any different with constants in the PHP context. In fact, constants here are names or identifiers that when defined, cannot be altered. Shortly, we will dive more into its intricacies.
+In layman's terms, when something is said to be constant, it means that it cannot be altered in any way, even over time. 
+It is not any different from constants in the PHP context. In fact, constants here are names or identifiers that when defined, cannot be altered. Shortly, we will dive more into its intricacies.
 
 ### What we will cover
 1. What a PHP Constant is.
@@ -14,22 +14,22 @@ It is not any different with constants in the PHP context. In fact, constants he
 ### Prerequisites
 Before getting into it, you at least have to know the following concepts and install the following tools in your machine.
 1. Possess a basic PHP language understanding.
-2. Installed xampp which you could get from [here](https://www.apachefriends.org/download.html) or wampp from [here](https://sourceforge.net/projects/wampserver/). These softwares run the PHP scripts.
-3. Have installed a text editor you prefer. I will be using VS Code to run basic code from this article which you could install from [this](https://visualstudio.microsoft.com/downloads/) link.
+2. Installed xampp which you could get from [here](https://www.apachefriends.org/download.html) or wampp from [here](https://sourceforge.net/projects/wampserver/). The two software run the PHP scripts.
+3. Have installed a text editor you prefer. I will be using VS Code to run basic code from this article. You could install it from [this](https://visualstudio.microsoft.com/downloads/) link.
 
 Ready to learn? Let's begin!
 
 ### What a PHP Constant is
 From the above-covered introduction, constants can be compared to but not the same as variables. 
 Unlike variables, once we initialize or define a constant, we cannot change the value attached to it when executing a script at any point in time. 
-Of course there exists an exception for this condition when we use (magic constants) instead. We will not cover magic constants in this article but you could 
+Of course, there exists an exception for this condition when we use (magic constants) instead. We will not cover magic constants in this article but you could 
 find content on the same from [here](https://www.tutorialrepublic.com/php-tutorial/php-magic-constants.php) that explains magic constants concept profoundly.
-Due to their immutable nature, PHP Constants come in handy when defining data like configuration settings including the website's base URL, database username and passwords, to mention but a few. 
+Due to their immutable nature, PHP Constants come in handy when defining data like configuration settings including the website's base URL, database username, and passwords, to mention but a few. 
 
 ### PHP Constants naming conventions
-It is important to note that PHP constants are **case-sensitive** .
+It is important to note that PHP constants are **case-sensitive**.
 Also, when naming constants, they **must** begin with either a letter or an *underscore(_)*. 
-Next when we get to create a constant, we will also see that the constant names are **always** in uppercase.
+Next, when we get to create a constant, we will also see that the constant names are **always** in uppercase.
 
 ### Defining the PHP Constant
 Now that we have some basic understanding of what a constant is, let's see how we could create one.
@@ -53,7 +53,7 @@ define(name, value, case_insensitive)
   //Defining a case-insensitve constant
   define("NAME", "Neema Muganga", true);
   
-  //because we passed true for case-insensitive parameter, we could echo the value of the constant with the name written in lowercase.
+  //because we passed true for the case-insensitive parameter, we could echo the value of the constant with the name written in lowercase.
   echo name;
 ?>
 ```
@@ -80,21 +80,21 @@ Therefore, in a different example code, the syntax will be as below:
   echo constant("CITY");
 ?>
 ```
-Output will be:
+The output will be:
 
 ```bash
 Mombasa
 Mombasa
 ```
 
-So far so good. Now we know what a constant is, why and when it could be used, how to create one and how to finally access its value. 
+So far so good. Now we know what a constant is, why and when it could be used, how to create one, and how to finally access its value. 
 Should the concept still feel unclear, please go through the article a second time and everything will make perfect sense.
 
 Lastly, we will see how different constants are from variables just to clear any possible uncertainties when it comes to these two concepts.
 
 ### Differences between Constants and Variables
-1. First, we have already seen that unlike variables that start with the **'$'** sign, constants begin with either an underscore **'_'** or a letter.
-2. We also mentioned that constant values remain unchanged once defined unlike variables whose value can be changed to a something different.
+1. First, we have already seen that, unlike variables that start with the **'$'** sign, constants begin with either an underscore **'_'** or a letter.
+2. We also mentioned that constant values remain unchanged once defined, unlike variables whose value can be changed to something different.
 3. Defining a constant is only done using the define() function, while we could define variables using assignment statements of values attached to the variable names that begin with a '$' sign.
 4. In terms of scope, constants maintain a global scope. That is, they can be accessed from anywhere within a script. Variables on the other hand have their scope depending on where they have been defined in the script. Either globally or locally. You could read more about scope in PHP from [this](https://www.w3schools.com/php/php_variables_scope.asp) link to understand this distinction better.
 
