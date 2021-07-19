@@ -2,7 +2,7 @@
 title: Getting started with PHP Constants
 ---
 ### Introduction
-In layman's terms, when something is said to be constant, it means that nothing it can not be altered any way, even over time. 
+In layman's terms, when something is said to be constant, it means that it cannot be altered any way, even over time. 
 It is not any different with constants in the PHP context. In fact, constants here are names or identifiers that when defined, cannot be altered. Shortly, we will dive more into its intricacies.
 
 ### What we will cover
@@ -20,14 +20,14 @@ Before getting into it, you at least have to know the following concepts and ins
 Ready to learn? Let's begin!
 
 ### What a PHP Constant is
-From the above covered introduction, constants can be compared to but not the same as variables. 
+From the above-covered introduction, constants can be compared to but not the same as variables. 
 Unlike variables, once we initialize or define a constant, we cannot change the value attached to it when executing a script at any point in time. 
 Of course there exists an exception for this condition when we use (magic constants) instead. We will not cover magic constants in this article but you could 
 find content on the same from [here](https://www.tutorialrepublic.com/php-tutorial/php-magic-constants.php) that explains magic constants concept profoundly.
-Due to their immutable nature, PHP Constants come in handy when defining data like configuration settings including website's base URL, database username and passwords, to mention but a few. 
+Due to their immutable nature, PHP Constants come in handy when defining data like configuration settings including the website's base URL, database username and passwords, to mention but a few. 
 
 ### PHP Constants naming conventions
-It is important to note that PHP Constants are **case sensitive** .
+It is important to note that PHP constants are **case-sensitive** .
 Also, when naming constants, they **must** begin with either a letter or an *underscore(_)*. 
 Next when we get to create a constant, we will also see that the constant names are **always** in uppercase.
 
@@ -36,7 +36,7 @@ Now that we have some basic understanding of what a constant is, let's see how w
 The define() function is what we use when creating it. Three parameters are passed to it and these are:
  1. Name: This references to what you call your defined constant.
  2. Value: The value that is attached to the constant name.
- 3. case insensitive: Which is optional as a passed parameter and implies that a constant is case-insensitive. This parameter has two values: *True* and *False*. The default value for this parameter is **false** implying the constant being case-sensitive and **true** if case-insensitive.
+ 3. case_insensitive: This is optional as a passed parameter and implies that a constant is case-insensitive. This parameter has two values: *True* and *False*. The default value for this parameter is **false** implying the constant being case-sensitive and **true** if case-insensitive.
 > Remember constant names are always written in uppercase when defining and accessing their values. Therefore, when this parameter is set to *true*, you could write it in lowercase when accessing its value. Soon we will see this statement making better sense. 
 
 Below is the syntax used:
@@ -46,7 +46,7 @@ define(name, value, case_insensitive)
 
 ```php
 <?php
-  //Defining a a case-sensitive constant
+  //Defining a case-sensitive constant
   define("NAME", "Neema Muganga");
   echo NAME, "\n"; //Notice here, we write the constant name in uppercase as is required. By default, it is case-sensitive.
 
@@ -67,7 +67,7 @@ Neema Muganga
 
 In this context, I will introduce the **constant()** function that is used to retrieve the value of the constant by passing in the ***name*** of the constant as a parameter. This function is especially useful when we need to access a constant value whose name is not known.
 
-Therefore in a different example code, the syntax will be as below:
+Therefore, in a different example code, the syntax will be as below:
 
  ```php
 <?php
